@@ -62,7 +62,7 @@ function FeedbackForm() {
 
     const fetchUser = async () => {
       setLoading(true);
-     await fetch(`/users`, {
+     await fetch(`http://127.0.0.1:5432/users`, {
         headers:{
           'Accept': 'application/json',
           'Content-Type': 'application/json',
