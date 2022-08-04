@@ -62,7 +62,7 @@ function FeedbackForm() {
 
     const fetchUser = async () => {
       setLoading(true);
-     await fetch(`http://localhost:3004/users`, {
+     await fetch(`/users`, {
         headers:{
           'Accept': 'application/json',
           'Content-Type': 'application/json',
