@@ -8,6 +8,6 @@ if(!process.env.IS_TS_NODE){
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, {cors:true});
-  await app.listen(process.env.PORT || 'https://message-full-stack.herokuapp.com/');
+  await app.listen(process.env.PORT || 5432);
 }
 bootstrap();
