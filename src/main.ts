@@ -16,6 +16,6 @@ async function bootstrap() {
     new FastifyAdapter()
   );
 
-  await app.listen(process.env.PORT || 5432);
+  await app.listen(process.env.PORT || 3001);
 }
 bootstrap();
